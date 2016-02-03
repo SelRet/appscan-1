@@ -31,6 +31,7 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
  1. In the Applications section, click the widget of your application `appscan-<your name>`.
  2. Click `ADD A SERVICE OR API`. This will redirect you to the `CATALOG` page.
 > **PostgreSQL**
+> 
 > 1. Scroll to the bottom of the `CATALOG` page, and click `Bluemix Labs Catalog`.
 > 
 > 2.  Look for `postgresql` service and click it.
@@ -38,7 +39,9 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 > 3.  Change the service name to any name you want and click `CREATE`.
 > 
 > **AppScan Dynamic Analyzer**
+> 
 > 1. In the `CATALOG` page, look for `AppScan Dynamic Analyzer` service and click it.
+> 
 > 2. Change the service name to any name you want and click `CREATE`.
 > 
 > ##### **NOTE:** #####
