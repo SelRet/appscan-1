@@ -41,7 +41,7 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 > **AppScan Dynamic Analyzer**
 > 
 > 1. In the `CATALOG` page, look for `AppScan Dynamic Analyzer` service and click it.
-> 
+>
 > 2. Change the service name to any name you want and click `CREATE`.
 > 
 > ##### **NOTE:** #####
