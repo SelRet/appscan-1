@@ -50,3 +50,10 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
  3. Restage the web application.
 
 ----------
+##### **Communication between the Web Application and the Services** #####
+
+As mentioned earlier, the web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
+
+For the PostgreSQL service, the web application uses this service to save the accounts in a database. Initially, when the web application is first launched, the database is programmatically created and 2 rows or accounts are automatically inserted to be used for this tutorial.
+
+The PostgreSQLClient.java has a method called createTable() which programmatically creates the `Account` table, and inserts 2 accounts.
