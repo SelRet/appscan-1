@@ -128,12 +128,22 @@ As explained earlier, there are 2 accounts inserted automatically, together with
 > Username: `admin` Password: `password`
 > Username: `user1` Password: `password`
 
- 1. Login with the admin account (`admin`,`password`). Once you entered the correct username and password, you will be redirected to the home page of the user.
- 2. In the home page, there are 2 links, `Edit Name` and `Logout`.
+ 1. Login with the `admin` account. Credentials are (`admin`,`password`). 
+ 2. After a successful login, you will be redirected to the home page. there are 2 links, `Edit Name` and `Logout`. Click on `Edit Name`.
+ 3. Edit both first and last names to yours and click `Edit`.
+ 4. You will be redirected back to the home page with the new name reflected on the home page.
+ 5. Click `Logout`.
 
+You have tested the functionalities like logging in and editing the name in the web application. It just looks like a simple login application. But without knowing, the web application is vulnerable to SQL Injection and Cross Site Scripting attacks.
 
 ----------
 #####**Exploiting the Vulnerabilities in the Web Application** #####
+
+You will start at the login page once again after logging out. On this login page, this tutorial will demonstrate SQL Injection.
+
+ 1. Login with the `user1` account. But right now, to demonstrate SQL Injection, you will not need the password to login. Enter this as the username:
+
+> `user1' or 1=1 --`
 
 
 ----------
