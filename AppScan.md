@@ -108,6 +108,7 @@ For the AppScan Dynamic Analyzer, it does not necessarily have a direct communic
  2. There is a `Route` or URL just below your application name `(appscan-<your_name>.mybluemix.net`. This will open up the web application.
 
 > **IMPORTANT**
+> 
 > By entering just the Route given, you will encounter an error message:
 > 
 > `Error 404: SRVE0190E: File not found: /`
