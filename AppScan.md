@@ -15,12 +15,17 @@ Download a copy of the web application (AppScan.war) that you will deploy in you
 
 ##### **Deploy the Web Application in Bluemix using the `cf` tool** #####
  1. Open a terminal window and go to `appscan` directory.
- 2. Login to your Bluemix account using the `cf` tool.
+
+ 2. Login to your Bluemix account using the `cf` tool. You will be asked for your credentials, enter your e-mail address and password of your Bluemix account.
 > `cf login -a https://api.ng.bluemix.net -s dev`
 
  3. Upload the web application to your Bluemix account.
-> `cf push appscan-<your_name> -m 256M -p AppScan.war`
+ > `cf push appscan-<your_name> -m 256M -p AppScan.war`
 
+	**Example:**
+> `cf push appscan-ong -m 256M -p AppScan.war`
+
+ 4. After uploading, the application you pushed will be available under the `Applications` section in the Dashboard.
 
 ----------
 
@@ -50,7 +55,7 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
  3. Restage the web application.
 
 ----------
-##### **Communication between the Web Application and the Services** #####
+##### **Understanding the Communication between the Web Application and the Services** #####
 
 As mentioned earlier, the web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 
@@ -94,3 +99,9 @@ The `PostgreSQLClient.java` contains the initialization process, which includes 
     }
 
 For the AppScan Dynamic Analyzer, it does not necessarily have a direct communication with the web application. The web application is bound with AppScan Dynamic Analyzer so that the service will be able to scan the web application for vulnerabilities. Later in this tutorial, you will see how this service scans for vulnerabilities and produces a downloadable report.
+
+----------
+##### **Launch the Web Application** #####
+
+ 1. Go to the `DASHBOARD` of your Bluemix account. On the `Applications`
+
