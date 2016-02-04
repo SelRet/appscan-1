@@ -103,5 +103,21 @@ For the AppScan Dynamic Analyzer, it does not necessarily have a direct communic
 ----------
 ##### **Launch the Web Application** #####
 
- 1. Go to the `DASHBOARD` of your Bluemix account. On the `Applications`
+ 1. Go to the `DASHBOARD` of your Bluemix account. On the `Applications` section, click on the application `(appscan-<your_name>)` you pushed earlier.
+ 
+ 2. There is a `Route` or URL just below your application name `(appscan-<your_name>.mybluemix.net`. This will open up the web application.
+
+> **IMPORTANT**
+> By entering just the Route given, you will encounter an error message:
+> 
+> `Error 404: SRVE0190E: File not found: /`
+> 
+> This is because it cannot find what page to open. In this tutorial, you will start the web application with `Login.jsp`. So `Login.jsp` will be added at the end of the URL.
+> 
+> New URL becomes:
+> `appscan-<your_name>.mybluemix.net/Login.jsp`
+
+
+----------
+
 
