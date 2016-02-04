@@ -56,4 +56,41 @@ As mentioned earlier, the web application uses 2 services, PostgreSQL and AppSca
 
 For the PostgreSQL service, the web application uses this service to save the accounts in a database. Initially, when the web application is first launched, the database is programmatically created and 2 rows or accounts are automatically inserted to be used for this tutorial.
 
-The PostgreSQLClient.java has a method called createTable() which programmatically creates the `Account` table, and inserts 2 accounts.
+If you extract the contents of the `AppScan.war` file, inside the `WEB-INF/classes/Servlet` directory, you will see the `PostgreSQLClient.java`. 
+
+The `PostgreSQLClient.java` contains the initialization process, which includes the `getConnection()` method and the `createTable()` method. The `getConnection` method simply enables the web application to use the credentials to gain connection to the database. The `createTable` method programmatically creates the `Account` table, and inserts the 2 accounts. The `Account` table consists of 4 columns, `username`, `password`, `firstname`, and `lastname`. 
+
+    public void createTable() throws Exception {
+        String sql = "CREATE TABLE IF NOT EXISTS Account "
+                + "(username varchar(45) NOT NULL PRIMARY KEY, "
+                + "password varchar(45) NOT NULL, "
+                + "firstname varchar(45), "
+                + "lastname varchar(45))"
+                + ";";
+        String sql2 = "INSERT INTO Account "
+                + "(username, password, firstname, lastname) "
+                + "VALUES ('admin', 'password', 'Jarrette', 'Ong'), "
+                + "('user1', 'password', 'Lance', 'Del Valle');";
+        Connection connection = null;
+        PreparedStatement statement = null;
+
+        try {
+            connection = getConnection();
+            statement = connection.prepareStatement(sql);
+            statement.executeUpdate();
+            statement = connection.prepareStatement(sql2);
+            statement.executeUpdate();
+        } catch (Exception e){
+            System.out.println("Initialization already completed.");
+        } finally {
+            if (statement != null) {
+                statement.close();
+            }
+
+            if (connection != null) {
+                connection.close();
+            }
+        }
+    }
+
+For the AppScan Dynamic Analyzer, it does not necessarily have a direct communication with the web application. The web application is bound with AppScan Dynamic Analyzer so that the service will be able to scan the web application for vulnerabilities. Later in this tutorial, you will see how this service scans for vulnerabilities and produces a downloadable report.
