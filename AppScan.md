@@ -121,7 +121,21 @@ For the AppScan Dynamic Analyzer, it does not necessarily have a direct communic
 ----------
 ##### **Test the Web Application** #####
 
-The web application starts with a login page. You may try out the some of the functionalities. (e.g. Login, edit name) 
+The web application starts with a login page. You may try out some of the functionalities. (e.g. Login, edit name) 
 
-As explained earlier, there are 2 accounts inserted 
+As explained earlier, there are 2 accounts inserted automatically, together with the creation of the database. The 2 accounts created earlier and their user credentials (i.e username, password) are as follows.
+
+> Username: `admin` Password: `password`
+> Username: `user1` Password: `password`
+
+ 1. Login with the admin account (`admin`,`password`). Once you entered the correct username and password, you will be redirected to the home page of the user.
+ 2. In the home page, there are 2 links, `Edit Name` and `Logout`.
+
+
+----------
+#####**Exploiting the Vulnerabilities in the Web Application** #####
+
+
+----------
+
 
