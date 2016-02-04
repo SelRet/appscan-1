@@ -149,14 +149,16 @@ You will start at the login page once again after logging out. On this login pag
 
 	    SELECT * FROM Account WHERE username = 'user1' -- and password = '" + pass + "';
 
-	Hence, you will be logged in with `user1`'s account. 
+	With the password commented out, the `WHERE` clause returns `TRUE`. Hence, you will be logged in with `user1`'s account. 
 
- 1. On the home page, click `Edit Name`.
- 2. On this edit page, this tutorial will demonstrate Cross Site Scripting or XSS attack.
- 3. Enter your first name in the `First Name` field.
- 4. Enter this in the `Last Name` field.
+ 2. On the home page, click `Edit Name`.
+ 3. On this edit page, this tutorial will demonstrate Cross Site Scripting or XSS attack.
+ 4. Enter your first name in the `First Name` field.
+ 5. Enter this in the `Last Name` field.
 
-	> `<script>alert(1)</script>`
+	> `<script>alert('This is an XSS attack.')</script>`
+
+ 6. You will be redirected back to the home page with an alert message, `This is an XSS attack.` This means the web application is vulnerable to XSS since it allows scripts to execute.
 
 ----------
 
