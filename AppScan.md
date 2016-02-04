@@ -143,9 +143,20 @@ You will start at the login page once again after logging out. On this login pag
 
  1. Login with the `user1` account. But right now, to demonstrate SQL Injection, you will not need the password to login. Enter this as the username:
 
-> `user1' or 1=1 --`
+	> `user1' --`
 
-This is known as SQL Injection Login Bypass. 
+	This is known as SQL Injection Login Bypass. `--` represents commenting out the SQL query after the `--`. The SQL query will become:
+
+	    SELECT * FROM Account WHERE username = 'user1' -- and password = '" + pass + "';
+
+	Hence, you will be logged in with `user1`'s account. 
+
+ 1. On the home page, click `Edit Name`.
+ 2. On this edit page, this tutorial will demonstrate Cross Site Scripting or XSS attack.
+ 3. Enter your first name in the `First Name` field.
+ 4. Enter this in the `Last Name` field.
+
+	> `<script>alert(1)</script>`
 
 ----------
 
