@@ -118,7 +118,10 @@ For the AppScan Dynamic Analyzer, it does not necessarily have a direct communic
 > New URL becomes:
 > `appscan-<your_name>.mybluemix.net/Login.jsp`
 
-
 ----------
+##### **Test the Web Application** #####
 
+The web application starts with a login page. You may try out the some of the functionalities. (e.g. Login, edit name) 
+
+As explained earlier, there are 2 accounts inserted 
 
