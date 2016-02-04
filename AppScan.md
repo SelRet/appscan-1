@@ -145,6 +145,7 @@ You will start at the login page once again after logging out. On this login pag
 
 > `user1' or 1=1 --`
 
+This is known as SQL Injection Login Bypass. 
 
 ----------
 
