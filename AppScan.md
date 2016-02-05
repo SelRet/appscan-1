@@ -185,5 +185,7 @@ You will start at the login page once again after logging out. On this login pag
 
 ----------
 
+##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer.ppt)**
+
 
 #### **End of Tutorial**
