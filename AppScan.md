@@ -160,6 +160,12 @@ You will start at the login page once again after logging out. On this login pag
 
  6. You will be redirected back to the home page with an alert message, `This is an XSS attack.` This means the web application is vulnerable to XSS since it allows scripts to execute.
 
-----------
+> ##### **Note** #####
+> 
+> The script statement `<script>alert('This is an XSS attack.')</script>` is stored in the database. So whenever `user1` logs in the account, an alert message will appear. 
+> 
+> XSS attack becomes dangerous when the script entered redirects you to a malicious website and executes scripts to get user credentials. In this tutorial, it just showed you an XSS-vulnerable website.
 
+----------
+##### **Using the AppScan Dynamic Analyzer Service** #####
 
