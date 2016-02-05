@@ -1,3 +1,5 @@
+##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer.ppt)**
+
 AppScan Dynamic Analyzer
 ===================
 AppScan Dynamic Analyzer identifies security issues in web applications and helps keep them secure. It provides a downloadable report which contains the detected vulnerabilities.
@@ -184,8 +186,6 @@ You will start at the login page once again after logging out. On this login pag
 
 
 ----------
-
-##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer.ppt)**
 
 
 #### **End of Tutorial**
