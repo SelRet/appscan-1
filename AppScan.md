@@ -46,7 +46,7 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 > 3.  Change the service name to any name you want and click `CREATE`.
 > 
 >
-> **AppScan Dynamic Analyzer** (skip)
+> **AppScan Dynamic Analyzer** (skip, service can't be added as of February 4, 2016)
 > 
 > 1. In the `CATALOG` page, look for `AppScan Dynamic Analyzer` service and click it.
 >
@@ -170,7 +170,7 @@ You will start at the login page once again after logging out. On this login pag
 > XSS attack becomes dangerous when the script entered redirects you to a malicious website and executes scripts to get user credentials. In this tutorial, it just showed you an XSS-vulnerable website.
 
 ----------
-##### **Using the AppScan Dynamic Analyzer Service**
+##### **Using the AppScan Dynamic Analyzer Service** (skip, service can't be added as of February 4, 2016)
 
  1. Click on the widget of AppScan Dynamic Analyzer under `Services` section.
  
