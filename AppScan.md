@@ -170,4 +170,11 @@ You will start at the login page once again after logging out. On this login pag
 ##### **Using the AppScan Dynamic Analyzer Service** #####
 
  1. Click on the widget of AppScan Dynamic Analyzer under `Services` section.
- 2. On the `"What URL should we scan?"` page, select the URL of the application (i.e. `app`)
+ 2. On the `"What URL should we scan?"` page, select the URL of the application. (i.e. `appscan-<your_name>.mybluemix.net`) and choose `Production Site`.
+ 3. On the `"Name your Scan"` page, create a name (e.g. `MyAppScan`) for your scan. Choose `Yes` that the application requires users to login.
+ 
+	> If the application requires logging in, enter a working username and password in that application for testing purposes of AppScan Dynamic Analyzer service.
+
+ 4. Click `Scan` to start the scan. Scanning time ranges from minutes to days depending on the application size. For the web application used in this tutorial, scan time is around 10 to 15 minutes.
+ 5. You will be able to download the scan report as PDF file. Here is the sample scan report for the web application used in this tutorial.
+
