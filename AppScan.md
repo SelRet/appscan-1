@@ -169,3 +169,5 @@ You will start at the login page once again after logging out. On this login pag
 ----------
 ##### **Using the AppScan Dynamic Analyzer Service** #####
 
+ 1. Click on the widget of AppScan Dynamic Analyzer under `Services` section.
+ 2. On the `"What URL should we scan?"` page, select the URL of the application (i.e. `app`)
