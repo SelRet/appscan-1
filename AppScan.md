@@ -5,7 +5,7 @@ AppScan Dynamic Analyzer identifies security issues in web applications and help
 In this tutorial, you will learn how to use AppScan Dynamic Analyzer to scan web applications for vulnerabilities. To further realize the importance of this service, you will first try out the vulnerabilities in the web application.
 
 ----------
-##### **Download the Web Application** #####
+##### **Download the Web Application** 
 Download a copy of the web application (AppScan.war) that you will deploy in your Bluemix account.
 
  1. Create a directory `appscan` in the root directory.
@@ -13,7 +13,7 @@ Download a copy of the web application (AppScan.war) that you will deploy in you
 
 ----------
 
-##### **Deploy the Web Application in Bluemix using the `cf` tool** #####
+##### **Deploy the Web Application in Bluemix using the `cf` tool** 
  1. Open a terminal window and go to `appscan` directory.
 
  2. Login to your Bluemix account using the `cf` tool. You will be asked for your credentials, enter your e-mail address and password of your Bluemix account.
@@ -29,7 +29,7 @@ Download a copy of the web application (AppScan.war) that you will deploy in you
 
 ----------
 
-##### **Add and Bind Services to Web Application** #####
+##### **Add and Bind Services to Web Application** 
 
 This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer. 
 
@@ -43,7 +43,8 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 >
 > 3.  Change the service name to any name you want and click `CREATE`.
 > 
-> **AppScan Dynamic Analyzer**
+>
+> **AppScan Dynamic Analyzer** (skip)
 > 
 > 1. In the `CATALOG` page, look for `AppScan Dynamic Analyzer` service and click it.
 >
@@ -55,7 +56,7 @@ This web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
  3. Restage the web application.
 
 ----------
-##### **Understanding the Communication between the Web Application and the Services** #####
+##### **Understanding the Communication between the Web Application and the Services** 
 
 As mentioned earlier, the web application uses 2 services, PostgreSQL and AppScan Dynamic Analyzer.
 
@@ -101,7 +102,7 @@ The `PostgreSQLClient.java` contains the initialization process, which includes 
 For the AppScan Dynamic Analyzer, it does not necessarily have a direct communication with the web application. The web application is bound with AppScan Dynamic Analyzer so that the service will be able to scan the web application for vulnerabilities. Later in this tutorial, you will see how this service scans for vulnerabilities and produces a downloadable report.
 
 ----------
-##### **Launch the Web Application** #####
+##### **Launch the Web Application** 
 
  1. Go to the `DASHBOARD` of your Bluemix account. On the `Applications` section, click on the application `(appscan-<your_name>)` you pushed earlier.
  
@@ -119,7 +120,7 @@ For the AppScan Dynamic Analyzer, it does not necessarily have a direct communic
 > `appscan-<your_name>.mybluemix.net/Login.jsp`
 
 ----------
-##### **Test the Web Application** #####
+##### **Test the Web Application** 
 
 The web application starts with a login page. You may try out some of the functionalities. (e.g. Login, edit name) 
 
@@ -137,7 +138,7 @@ As explained earlier, there are 2 accounts inserted automatically, together with
 You have tested the functionalities like logging in and editing the name in the web application. It just looks like a simple login application. But without knowing, the web application is vulnerable to SQL Injection and Cross Site Scripting attacks.
 
 ----------
-#####**Exploiting the Vulnerabilities in the Web Application** #####
+#####**Exploiting the Vulnerabilities in the Web Application** 
 
 You will start at the login page once again after logging out. On this login page, this tutorial will demonstrate SQL Injection.
 
@@ -160,21 +161,29 @@ You will start at the login page once again after logging out. On this login pag
 
  6. You will be redirected back to the home page with an alert message, `This is an XSS attack.` This means the web application is vulnerable to XSS since it allows scripts to execute.
 
-> ##### **Note** #####
+> ##### **Note** 
 > 
 > The script statement `<script>alert('This is an XSS attack.')</script>` is stored in the database. So whenever `user1` logs in the account, an alert message will appear. 
 > 
 > XSS attack becomes dangerous when the script entered redirects you to a malicious website and executes scripts to get user credentials. In this tutorial, it just showed you an XSS-vulnerable website.
 
 ----------
-##### **Using the AppScan Dynamic Analyzer Service** #####
+##### **Using the AppScan Dynamic Analyzer Service**
 
  1. Click on the widget of AppScan Dynamic Analyzer under `Services` section.
+ 
  2. On the `"What URL should we scan?"` page, select the URL of the application. (i.e. `appscan-<your_name>.mybluemix.net`) and choose `Production Site`.
+ 
  3. On the `"Name your Scan"` page, create a name (e.g. `MyAppScan`) for your scan. Choose `Yes` that the application requires users to login.
  
 	> If the application requires logging in, enter a working username and password in that application for testing purposes of AppScan Dynamic Analyzer service.
 
  4. Click `Scan` to start the scan. Scanning time ranges from minutes to days depending on the application size. For the web application used in this tutorial, scan time is around 10 to 15 minutes.
- 5. You will be able to download the scan report as PDF file. Here is the sample scan report for the web application used in this tutorial.
+ 
+ 5. You will be able to download the scan report as a PDF file. Here is the sample scan report for the web application used in this tutorial.
 
+
+----------
+
+
+#### **End of Tutorial**
