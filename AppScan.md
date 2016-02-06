@@ -4,7 +4,7 @@ title: AppScan
 permalink: /appscan/
 ---
 
-##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer.ppt)**
+##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer%20(1).ppt)**
 
 AppScan Dynamic Analyzer
 ===================
