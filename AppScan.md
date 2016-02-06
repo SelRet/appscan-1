@@ -1,3 +1,9 @@
+---
+layout: post
+title: AppScan
+permalink: /appscan/
+---
+
 ##### **[Download PPT Presentation](https://github.com/ongj/appscan/raw/master/AppScan%20Dynamic%20Analyzer.ppt)**
 
 AppScan Dynamic Analyzer
